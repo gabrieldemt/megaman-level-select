@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://xdj8g3fka6g7"]
+
+[ext_resource type="Texture2D" uid="uid://c8svv33gnme6t" path="res://reference.jpg" id="1_il3u1"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6kjfc"]
+
+[node name="Control" type="Control" unique_id=1957090688]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Reference" type="TextureRect" parent="." unique_id=190888434]
+modulate = Color(1, 1, 1, 0.14117648)
+z_index = 999
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_il3u1")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1847081671]
+visible = false
+modulate = Color(1, 1, 1, 0.6117647)
+layout_mode = 0
+offset_left = 213.0
+offset_top = 207.0
+offset_right = 942.0
+offset_bottom = 438.0
+texture = SubResource("PlaceholderTexture2D_6kjfc")
