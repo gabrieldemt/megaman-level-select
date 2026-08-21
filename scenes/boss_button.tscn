@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dwneonatcc6sm"]
+
+[ext_resource type="Texture2D" uid="uid://c7bwf8lrvydgy" path="res://icon.svg" id="1_5xm1j"]
+[ext_resource type="Script" uid="uid://kg64pud0h4pf" path="res://scripts/boss_button.gd" id="2_r4jh1"]
+
+[node name="Button" type="Button" unique_id=201656669]
+custom_minimum_size = Vector2(125, 125)
+icon = ExtResource("1_5xm1j")
+script = ExtResource("2_r4jh1")
