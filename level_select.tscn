@@ -84,10 +84,17 @@ layout_mode = 2
 
 [node name="Button" parent="VBoxContainer/TopHBoxContainer" unique_id=201656669 instance=ExtResource("3_wevku")]
 layout_mode = 2
-boss_name = "Xablau"
+boss_name = "Wheel Gator"
+stage = "Dinosaur Tank"
+weapon = "Spin Wheel"
+weakness = "Strike Chain"
 
 [node name="Button2" parent="VBoxContainer/TopHBoxContainer" unique_id=1241338551 instance=ExtResource("3_wevku")]
 layout_mode = 2
+boss_name = "Bubble Crab"
+stage = "Deep Sea Base"
+weapon = "Bubble Splash"
+weakness = "Spin Wheel"
 
 [node name="Control" type="Control" parent="VBoxContainer/TopHBoxContainer" unique_id=203845344]
 custom_minimum_size = Vector2(100, 0)
@@ -95,18 +102,34 @@ layout_mode = 2
 
 [node name="Button3" parent="VBoxContainer/TopHBoxContainer" unique_id=1655992382 instance=ExtResource("3_wevku")]
 layout_mode = 2
+boss_name = "Flame Stag"
+stage = "Volcanic Zone"
+weapon = "Speed Burner"
+weakness = "Bubble Splash"
 
 [node name="Button4" parent="VBoxContainer/TopHBoxContainer" unique_id=1124102771 instance=ExtResource("3_wevku")]
 layout_mode = 2
+boss_name = "Robot Junkyard"
+stage = "Morth Moth"
+weapon = "Silk Shot"
+weakness = "Speed Burner"
 
 [node name="BottomHBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1595658864]
 layout_mode = 2
 
 [node name="Button" parent="VBoxContainer/BottomHBoxContainer" unique_id=1205267688 instance=ExtResource("3_wevku")]
 layout_mode = 2
+boss_name = "Magna Centipide"
+stage = "Central Computer"
+weapon = "Magnet Mine"
+weakness = "Silk Shot"
 
 [node name="Button2" parent="VBoxContainer/BottomHBoxContainer" unique_id=1838105327 instance=ExtResource("3_wevku")]
 layout_mode = 2
+boss_name = "Crystal Snail"
+stage = "Energen Crystal"
+weapon = "Crystal Hunter"
+weakness = "Magnet Mine"
 
 [node name="Control" type="Control" parent="VBoxContainer/BottomHBoxContainer" unique_id=1162889948]
 custom_minimum_size = Vector2(100, 0)
@@ -114,9 +137,17 @@ layout_mode = 2
 
 [node name="Button3" parent="VBoxContainer/BottomHBoxContainer" unique_id=1961018880 instance=ExtResource("3_wevku")]
 layout_mode = 2
+boss_name = "Overdrive Ostrich"
+stage = "Desert Base"
+weapon = "Sonic Slicer"
+weakness = "Crystal Hunter"
 
 [node name="Button4" parent="VBoxContainer/BottomHBoxContainer" unique_id=298257874 instance=ExtResource("3_wevku")]
 layout_mode = 2
+boss_name = "Wire Sponge"
+stage = "Weather Control"
+weapon = "Strike Chain"
+weakness = "Sonic Slicer"
 
 [node name="LevelNameLabel" type="Label" parent="." unique_id=1756193137]
 layout_mode = 0

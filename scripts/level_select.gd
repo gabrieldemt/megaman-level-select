@@ -10,4 +10,4 @@ func _ready() -> void:
 		button.focus_entered.connect(_on_button_focus_entered.bind(button))
 		
 func _on_button_focus_entered(button: Button) -> void:
-	print("focus entered " + button.boss_name)
+	print("focus entered " + button.boss_name + " " + button.stage)
