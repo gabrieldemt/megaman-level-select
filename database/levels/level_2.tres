@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Level" format=3 uid="uid://0lgdsfnx734t"]
+
+[ext_resource type="Script" uid="uid://c6xh26i1r7nia" path="res://scripts/level.gd" id="1_je0fe"]
+
+[resource]
+script = ExtResource("1_je0fe")
+boss_name = "Xablau 2"
+stage = "aaaa"
+metadata/_custom_type_script = "uid://c6xh26i1r7nia"

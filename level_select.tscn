@@ -3,8 +3,10 @@
 [ext_resource type="Script" uid="uid://b1oceg6ie5dpu" path="res://scripts/level_select.gd" id="1_1iyaf"]
 [ext_resource type="Texture2D" uid="uid://c8svv33gnme6t" path="res://reference.jpg" id="1_il3u1"]
 [ext_resource type="Texture2D" uid="uid://chx7r2grh67mb" path="res://prototype textures/PNG/Light/texture_02.png" id="1_lmhjs"]
+[ext_resource type="Script" uid="uid://c6xh26i1r7nia" path="res://scripts/level.gd" id="2_8qr5y"]
 [ext_resource type="Texture2D" uid="uid://cj1ou8dua2cn7" path="res://prototype textures/PNG/Green/texture_01.png" id="2_vomi7"]
 [ext_resource type="Texture2D" uid="uid://h2o7th13vdnt" path="res://prototype textures/PNG/Dark/texture_04.png" id="3_1iyaf"]
+[ext_resource type="Resource" uid="uid://cpngkhr7hf4vn" path="res://database/levels/level_1.tres" id="3_05pd3"]
 [ext_resource type="PackedScene" uid="uid://dwneonatcc6sm" path="res://scenes/boss_button.tscn" id="3_wevku"]
 [ext_resource type="Texture2D" uid="uid://dmc3mot1y2b7" path="res://prototype textures/PNG/Purple/texture_01.png" id="4_1wnlg"]
 
@@ -25,6 +27,7 @@ grow_vertical = 2
 script = ExtResource("1_1iyaf")
 initial_focus = NodePath("VBoxContainer/TopHBoxContainer/Button")
 boss_buttons = [NodePath("VBoxContainer/TopHBoxContainer/Button"), NodePath("VBoxContainer/TopHBoxContainer/Button2"), NodePath("VBoxContainer/TopHBoxContainer/Button3"), NodePath("VBoxContainer/TopHBoxContainer/Button4"), NodePath("VBoxContainer/BottomHBoxContainer/Button"), NodePath("VBoxContainer/BottomHBoxContainer/Button2"), NodePath("VBoxContainer/BottomHBoxContainer/Button3"), NodePath("VBoxContainer/BottomHBoxContainer/Button4")]
+level_data = Array[ExtResource("2_8qr5y")]([ExtResource("3_05pd3")])
 metadata/_edit_lock_ = true
 
 [node name="BackgroundTextureRect" type="TextureRect" parent="." unique_id=232277349]
