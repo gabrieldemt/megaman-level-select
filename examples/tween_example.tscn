@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cu5wyqciieky0"]
+
+[ext_resource type="Script" uid="uid://c3evuayntlyjp" path="res://tween_examples.gd" id="1_5e6el"]
+[ext_resource type="Texture2D" uid="uid://c7bwf8lrvydgy" path="res://icon.svg" id="2_tynqj"]
+[ext_resource type="Script" uid="uid://1ofw4e1s6xeu" path="res://tween_example_extra.gd" id="3_ughoh"]
+
+[node name="Control" type="Control" unique_id=1308461734]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5e6el")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=291811312]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=37814534]
+layout_mode = 0
+offset_left = 255.0
+offset_top = 253.0
+offset_right = 383.0
+offset_bottom = 381.0
+texture = ExtResource("2_tynqj")
+script = ExtResource("3_ughoh")
+ease = 2
+trans = 5
+duration = 5.0
