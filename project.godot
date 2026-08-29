@@ -37,6 +37,16 @@ window/stretch/aspect="expand"
 
 enabled=PackedStringArray("res://addons/resources_spreadsheet_view/plugin.cfg")
 
+[file_customization]
+
+folder_colors={
+"res://database/": "yellow",
+"res://examples/": "purple",
+"res://prototype textures/": "green",
+"res://scenes/": "red",
+"res://scripts/": "orange"
+}
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
