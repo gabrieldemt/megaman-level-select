@@ -21,7 +21,7 @@ func _ready() -> void:
 
 func _get_level(index: int) -> Level:
 	# TODO: lidar com null ref
-	if level_data.size() - 1 <= index:
+	if level_data.size() <= index:
 		printerr("No level found")
 		return null
 	return level_data[index]

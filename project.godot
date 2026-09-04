@@ -40,6 +40,7 @@ enabled=PackedStringArray("res://addons/resources_spreadsheet_view/plugin.cfg")
 [file_customization]
 
 folder_colors={
+"res://addons/": "pink",
 "res://database/": "yellow",
 "res://examples/": "purple",
 "res://prototype textures/": "green",

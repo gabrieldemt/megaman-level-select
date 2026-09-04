@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_je0fe")
-boss_name = "Xablau 2"
-stage = "aaaa"
+boss_name = "Bubble Crab"
+stage = "Deep-Sea Base"
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

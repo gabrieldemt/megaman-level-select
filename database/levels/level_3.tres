@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_xveau")
-boss_name = "Wheel Gator"
-stage = "Dinosaur Tank"
+boss_name = "Flame Stag"
+stage = "Volcanic Zone"
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"
