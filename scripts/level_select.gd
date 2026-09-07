@@ -29,7 +29,6 @@ func _get_level(index: int) -> Level:
 func _on_button_focus_entered(button: Button, level_index: int) -> void:
 	#var tween = get_tree().create_tween().bind_node(self).set_trans(Tween.TRANS_SINE)
 	#tween.tween_property(%LevelNameLabel,"modulate", Color.WHITE, 0.5)
-	
 	#print("focus entered " + button.boss_name + " " + button.stage)
 	
 	var focused_level: Level = _get_level(level_index)

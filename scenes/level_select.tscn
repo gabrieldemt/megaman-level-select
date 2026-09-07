@@ -16,6 +16,7 @@
 [ext_resource type="Resource" uid="uid://dn6ajdnhvixcp" path="res://database/levels/level_7.tres" id="9_317l6"]
 [ext_resource type="Texture2D" uid="uid://c8svv33gnme6t" path="res://reference.jpg" id="9_n1411"]
 [ext_resource type="Resource" uid="uid://dbp5jrcvpbowl" path="res://database/levels/level_8.tres" id="10_r4hmm"]
+[ext_resource type="Script" uid="uid://cvjypvb14w468" path="res://scenes/level_preview_texture_rect.gd" id="15_n1411"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_6kjfc"]
 line_spacing = 0.0
@@ -66,12 +67,16 @@ expand_mode = 2
 
 [node name="LevelPreviewTextureRect" type="TextureRect" parent="." unique_id=68085978]
 layout_mode = 0
-offset_left = 721.0
-offset_top = 263.0
-offset_right = 896.0
-offset_bottom = 389.0
+offset_left = 558.0
+offset_top = 264.0
+offset_right = 733.0
+offset_bottom = 390.0
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("7_0wyvj")
 expand_mode = 2
+script = ExtResource("15_n1411")
+duration = 0.3
+move_target = Vector2(721, 263)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1970521246]
 layout_mode = 1

@@ -4,4 +4,5 @@ extends Resource
 @export var boss_name: String
 @export var stage: String
 @export var preview: Texture2D
-@export var pin_location: Vector2
+@export var pin_location: String
+@export var boss_image: Texture2D
