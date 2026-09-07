@@ -17,12 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://c8svv33gnme6t" path="res://reference.jpg" id="9_n1411"]
 [ext_resource type="Resource" uid="uid://dbp5jrcvpbowl" path="res://database/levels/level_8.tres" id="10_r4hmm"]
 [ext_resource type="Script" uid="uid://cvjypvb14w468" path="res://scenes/level_preview_texture_rect.gd" id="15_n1411"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_6kjfc"]
-line_spacing = 0.0
-font_size = 30
-outline_size = 2
-outline_color = Color(0, 0, 0, 1)
+[ext_resource type="Script" uid="uid://fi6bdded6ots" path="res://scenes/labels.gd" id="17_vxici"]
 
 [node name="LevelSelect" type="Control" unique_id=1957090688 node_paths=PackedStringArray("initial_focus", "boss_buttons")]
 texture_filter = 1
@@ -148,36 +143,43 @@ layout_mode = 2
 boss_name = "Wire Sponge"
 stage = "Weather Control"
 
-[node name="LevelNameLabel" type="Label" parent="." unique_id=1756193137]
+[node name="Labels" type="Control" parent="." unique_id=266587224]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("17_vxici")
+duration = 0.3
+
+[node name="LevelNameLabel" type="RichTextLabel" parent="Labels" unique_id=2146213176]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 248.0
 offset_top = 234.0
 offset_right = 553.0
 offset_bottom = 283.0
+theme_override_font_sizes/normal_font_size = 30
 text = "Dinosaur Tank"
-label_settings = SubResource("LabelSettings_6kjfc")
 
-[node name="StageLabel" type="Label" parent="." unique_id=349296532]
+[node name="StageLabel" type="RichTextLabel" parent="Labels" unique_id=858445864]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 529.0
 offset_top = 279.0
 offset_right = 643.0
 offset_bottom = 328.0
+theme_override_font_sizes/normal_font_size = 30
 text = "Stage"
-label_settings = SubResource("LabelSettings_6kjfc")
 
-[node name="BossLabel" type="Label" parent="." unique_id=1964832449]
+[node name="BossLabel" type="RichTextLabel" parent="Labels" unique_id=1364686830]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 249.0
 offset_top = 338.0
 offset_right = 503.0
 offset_bottom = 436.0
+theme_override_font_sizes/normal_font_size = 30
 text = "Boss:
 Wheel Gator"
-label_settings = SubResource("LabelSettings_6kjfc")
 
 [node name="Reference" type="TextureRect" parent="." unique_id=190888434]
 visible = false

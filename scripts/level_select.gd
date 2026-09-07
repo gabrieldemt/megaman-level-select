@@ -5,9 +5,9 @@ extends Control
 
 @export var level_data: Array[Level]
 
-@onready var level_name_label: Label = %LevelNameLabel
-@onready var stage_label: Label = %StageLabel
-@onready var boss_label: Label = %BossLabel
+@onready var level_name_label: RichTextLabel = %LevelNameLabel
+@onready var stage_label: RichTextLabel = %StageLabel
+@onready var boss_label: RichTextLabel = %BossLabel
 
 @onready var tween = get_tree().create_tween()
 
