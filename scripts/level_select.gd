@@ -15,11 +15,13 @@ extends Control
 @onready var tween = get_tree().create_tween()
 
 func _ready() -> void:
+
 	initial_focus.grab_focus()
 	
 	var index := 0
 	for button in boss_buttons:
 		button.focus_entered.connect(_on_button_focus_entered.bind(button, index))
+		button.icon = level_data[index].boss_image
 		index += 1
 
 func _get_level(index: int) -> Level:
@@ -28,6 +30,7 @@ func _get_level(index: int) -> Level:
 		printerr("No level found")
 		return null
 	return level_data[index]
+
 
 func _on_button_focus_entered(button: Button, level_index: int) -> void:
 	#var tween = get_tree().create_tween().bind_node(self).set_trans(Tween.TRANS_SINE)

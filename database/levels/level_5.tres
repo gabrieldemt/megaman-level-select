@@ -1,9 +1,15 @@
 [gd_resource type="Resource" script_class="Level" format=3 uid="uid://y4jhgpoiixwx"]
 
+[ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="1_gr046"]
 [ext_resource type="Script" uid="uid://c6xh26i1r7nia" path="res://scripts/level.gd" id="1_vm4d5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_140lt"]
+atlas = ExtResource("1_gr046")
+region = Rect2(521.02124, 375.4174, 37.396057, 37.610962)
 
 [resource]
 script = ExtResource("1_vm4d5")
 boss_name = "Magna Centipede"
 stage = "Central Computer"
+boss_image = SubResource("AtlasTexture_140lt")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

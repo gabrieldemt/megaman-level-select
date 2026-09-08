@@ -1,9 +1,15 @@
 [gd_resource type="Resource" script_class="Level" format=3 uid="uid://j2ipr4s3ws6c"]
 
 [ext_resource type="Script" uid="uid://c6xh26i1r7nia" path="res://scripts/level.gd" id="1_vhdqj"]
+[ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="1_vpnd7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8awxa"]
+atlas = ExtResource("1_vpnd7")
+region = Rect2(521.02124, 375.4174, 37.396057, 37.610962)
 
 [resource]
 script = ExtResource("1_vhdqj")
 boss_name = "Morph Moth"
 stage = "Robot Junkyard"
+boss_image = SubResource("AtlasTexture_8awxa")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

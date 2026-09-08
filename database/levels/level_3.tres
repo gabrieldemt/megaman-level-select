@@ -1,9 +1,15 @@
 [gd_resource type="Resource" script_class="Level" format=3 uid="uid://doif80fxad2fq"]
 
+[ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="1_ste5c"]
 [ext_resource type="Script" uid="uid://c6xh26i1r7nia" path="res://scripts/level.gd" id="1_xveau"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86dau"]
+atlas = ExtResource("1_ste5c")
+region = Rect2(521.02124, 375.4174, 37.396057, 37.610962)
 
 [resource]
 script = ExtResource("1_xveau")
 boss_name = "Flame Stag"
 stage = "Volcanic Zone"
+boss_image = SubResource("AtlasTexture_86dau")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

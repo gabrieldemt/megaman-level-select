@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://dwneonatcc6sm"]
 
-[ext_resource type="Texture2D" uid="uid://c7bwf8lrvydgy" path="res://icon.svg" id="1_5xm1j"]
 [ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="1_7cspj"]
 [ext_resource type="Script" uid="uid://kg64pud0h4pf" path="res://scripts/boss_button.gd" id="2_r4jh1"]
 
@@ -8,8 +7,11 @@
 texture = ExtResource("1_7cspj")
 region_rect = Rect2(255.89981, 189.5244, 36.030334, 38.491333)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_704bu"]
+
 [node name="Button" type="Button" unique_id=201656669]
 custom_minimum_size = Vector2(125, 125)
 theme_override_styles/focus = SubResource("StyleBoxTexture_vxici")
-icon = ExtResource("1_5xm1j")
+icon = SubResource("CompressedTexture2D_704bu")
+expand_icon = true
 script = ExtResource("2_r4jh1")
