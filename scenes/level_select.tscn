@@ -6,7 +6,6 @@
 [ext_resource type="Resource" uid="uid://0lgdsfnx734t" path="res://database/levels/level_2.tres" id="4_m4qq5"]
 [ext_resource type="Texture2D" uid="uid://chx7r2grh67mb" path="res://prototype textures/PNG/Light/texture_02.png" id="4_s6tf7"]
 [ext_resource type="Resource" uid="uid://doif80fxad2fq" path="res://database/levels/level_3.tres" id="5_n1411"]
-[ext_resource type="Texture2D" uid="uid://cj1ou8dua2cn7" path="res://prototype textures/PNG/Green/texture_01.png" id="5_u4mbh"]
 [ext_resource type="Texture2D" uid="uid://h2o7th13vdnt" path="res://prototype textures/PNG/Dark/texture_04.png" id="6_rovvv"]
 [ext_resource type="Resource" uid="uid://j2ipr4s3ws6c" path="res://database/levels/level_4.tres" id="6_vxici"]
 [ext_resource type="Texture2D" uid="uid://dmc3mot1y2b7" path="res://prototype textures/PNG/Purple/texture_01.png" id="7_0wyvj"]
@@ -16,8 +15,13 @@
 [ext_resource type="Resource" uid="uid://dn6ajdnhvixcp" path="res://database/levels/level_7.tres" id="9_317l6"]
 [ext_resource type="Texture2D" uid="uid://c8svv33gnme6t" path="res://reference.jpg" id="9_n1411"]
 [ext_resource type="Resource" uid="uid://dbp5jrcvpbowl" path="res://database/levels/level_8.tres" id="10_r4hmm"]
+[ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="12_vxici"]
 [ext_resource type="Script" uid="uid://cvjypvb14w468" path="res://scenes/level_preview_texture_rect.gd" id="15_n1411"]
 [ext_resource type="Script" uid="uid://fi6bdded6ots" path="res://scenes/labels.gd" id="17_vxici"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gr046"]
+atlas = ExtResource("12_vxici")
+region = Rect2(305.07498, 1.7155113, 255.37228, 151.86755)
 
 [node name="LevelSelect" type="Control" unique_id=1957090688 node_paths=PackedStringArray("initial_focus", "boss_buttons")]
 texture_filter = 1
@@ -48,7 +52,7 @@ offset_left = 205.0
 offset_top = 207.0
 offset_right = 942.0
 offset_bottom = 438.0
-texture = ExtResource("5_u4mbh")
+texture = SubResource("AtlasTexture_gr046")
 expand_mode = 2
 
 [node name="LevelPinTextureRect" type="TextureRect" parent="." unique_id=482588072]
@@ -81,9 +85,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -330.0
+offset_left = -312.0
 offset_top = -293.0
-offset_right = 330.0
+offset_right = 348.0
 offset_bottom = 279.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -177,7 +181,7 @@ unique_name_in_owner = true
 layout_mode = 0
 offset_left = 249.0
 offset_top = 338.0
-offset_right = 503.0
+offset_right = 510.0
 offset_bottom = 436.0
 theme_override_font_sizes/normal_font_size = 30
 text = "Boss:
