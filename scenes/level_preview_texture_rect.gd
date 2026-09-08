@@ -7,14 +7,15 @@ extends TextureRect
 @export var scale_target: Vector2 = Vector2(1,1)
 
 var original_position: Vector2
-
+var original_scale: Vector2
 func _ready() -> void:
 	original_position = position
-	_test_animation()
+	original_scale = scale
+	animation()
 
-func _test_animation():
+func animation():
 	position = original_position
-	
+	self.scale = original_scale
 	# Tween 1 - Declaração
 	var movement_animation: Tween = create_tween().set_parallel(true)
 	

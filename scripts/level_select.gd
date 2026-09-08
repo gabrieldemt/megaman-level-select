@@ -9,6 +9,9 @@ extends Control
 @onready var stage_label: RichTextLabel = %StageLabel
 @onready var boss_label: RichTextLabel = %BossLabel
 
+@onready var labels: Control = %Labels
+@onready var level_preview_texture_rect: TextureRect = %LevelPreviewTextureRect
+
 @onready var tween = get_tree().create_tween()
 
 func _ready() -> void:
@@ -34,6 +37,9 @@ func _on_button_focus_entered(button: Button, level_index: int) -> void:
 	var focused_level: Level = _get_level(level_index)
 	level_name_label.text = focused_level.stage
 	boss_label.text = focused_level.boss_name
+	labels.animation()
+	level_preview_texture_rect.animation()
+	
 
 #region Animations
 
