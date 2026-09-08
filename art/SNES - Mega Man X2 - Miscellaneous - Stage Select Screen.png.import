@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://daf2k6y2wfw4j"
-path="res://.godot/imported/focus.png-c47c7f65f9ffd4fb7ab15acb770fe296.ctex"
+uid="uid://drdavoq2u15sa"
+path="res://.godot/imported/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png-888f4ca06a596b6dd486b53dd158ab12.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/focus.png"
-dest_files=["res://.godot/imported/focus.png-c47c7f65f9ffd4fb7ab15acb770fe296.ctex"]
+source_file="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png"
+dest_files=["res://.godot/imported/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png-888f4ca06a596b6dd486b53dd158ab12.ctex"]
 
 [params]
 
