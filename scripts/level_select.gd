@@ -19,6 +19,7 @@ func _ready() -> void:
 	initial_focus.grab_focus()
 	
 	var index := 0
+	level_preview_texture_rect.texture = level_data[index].preview
 	for button in boss_buttons:
 		button.focus_entered.connect(_on_button_focus_entered.bind(button, index))
 		button.icon = level_data[index].boss_image
@@ -40,8 +41,12 @@ func _on_button_focus_entered(button: Button, level_index: int) -> void:
 	var focused_level: Level = _get_level(level_index)
 	level_name_label.text = focused_level.stage
 	boss_label.text = focused_level.boss_name
+	level_preview_texture_rect.texture = level_data[level_index].preview
+	
+	# Animations for label and preview
 	labels.animation()
 	level_preview_texture_rect.animation()
+	
 	
 
 #region Animations

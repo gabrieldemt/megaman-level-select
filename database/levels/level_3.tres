@@ -7,9 +7,14 @@
 atlas = ExtResource("1_ste5c")
 region = Rect2(263.06903, 384.86353, 37.396057, 37.610962)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ste5c"]
+atlas = ExtResource("1_ste5c")
+region = Rect2(568.1561, 130.73674, 63.073303, 48.47583)
+
 [resource]
 script = ExtResource("1_xveau")
 boss_name = "Flame Stag"
 stage = "Volcanic Zone"
+preview = SubResource("AtlasTexture_ste5c")
 boss_image = SubResource("AtlasTexture_86dau")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

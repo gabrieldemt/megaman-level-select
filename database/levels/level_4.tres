@@ -7,9 +7,14 @@
 atlas = ExtResource("1_vpnd7")
 region = Rect2(167.51768, 384.86356, 37.396057, 37.610962)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpnd7"]
+atlas = ExtResource("1_vpnd7")
+region = Rect2(566.6965, 80.23627, 63.40741, 47.80246)
+
 [resource]
 script = ExtResource("1_vhdqj")
 boss_name = "Morph Moth"
 stage = "Robot Junkyard"
+preview = SubResource("AtlasTexture_vpnd7")
 boss_image = SubResource("AtlasTexture_8awxa")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

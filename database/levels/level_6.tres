@@ -7,9 +7,14 @@
 atlas = ExtResource("1_r6inq")
 region = Rect2(570.7548, 375.7403, 37.396057, 37.610962)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_bv2q8"]
+atlas = ExtResource("1_r6inq")
+region = Rect2(633.9682, 181.0516, 63.073303, 48.47583)
+
 [resource]
 script = ExtResource("1_xuxpc")
 boss_name = "Crystal Snail"
 stage = "Energen Crystal"
+preview = SubResource("AtlasTexture_bv2q8")
 boss_image = SubResource("AtlasTexture_r6inq")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

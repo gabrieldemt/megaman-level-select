@@ -7,9 +7,14 @@
 atlas = ExtResource("1_su1bu")
 region = Rect2(118.83374, 385.59015, 37.396057, 37.610962)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_su1bu"]
+atlas = ExtResource("1_su1bu")
+region = Rect2(566.76105, 29.724388, 63.073303, 48.47583)
+
 [resource]
 script = ExtResource("1_d705d")
 boss_name = "Wire Sponge"
 stage = "Weather Control"
+preview = SubResource("AtlasTexture_su1bu")
 boss_image = SubResource("AtlasTexture_7hpxr")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

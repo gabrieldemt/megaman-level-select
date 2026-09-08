@@ -8,6 +8,7 @@ extends TextureRect
 
 var original_position: Vector2
 var original_scale: Vector2
+
 func _ready() -> void:
 	original_position = position
 	original_scale = scale

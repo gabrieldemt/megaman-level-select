@@ -7,9 +7,14 @@
 atlas = ExtResource("1_1sxrk")
 region = Rect2(377.14932, 375.7807, 37.396057, 37.610962)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_hh0qj"]
+atlas = ExtResource("1_1sxrk")
+region = Rect2(632.82544, 29.720116, 63.073303, 48.47583)
+
 [resource]
 script = ExtResource("1_rgiwc")
 boss_name = "Overdrive Ostrich"
 stage = "Desert Base"
+preview = SubResource("AtlasTexture_hh0qj")
 boss_image = SubResource("AtlasTexture_1sxrk")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"
