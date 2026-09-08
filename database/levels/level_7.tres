@@ -3,13 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="1_1sxrk"]
 [ext_resource type="Script" uid="uid://c6xh26i1r7nia" path="res://scripts/level.gd" id="1_rgiwc"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hh0qj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1sxrk"]
 atlas = ExtResource("1_1sxrk")
-region = Rect2(521.02124, 375.4174, 37.396057, 37.610962)
+region = Rect2(377.14932, 375.7807, 37.396057, 37.610962)
 
 [resource]
 script = ExtResource("1_rgiwc")
 boss_name = "Overdrive Ostrich"
 stage = "Desert Base"
-boss_image = SubResource("AtlasTexture_hh0qj")
+boss_image = SubResource("AtlasTexture_1sxrk")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

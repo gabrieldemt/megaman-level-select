@@ -3,13 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="1_r6inq"]
 [ext_resource type="Script" uid="uid://c6xh26i1r7nia" path="res://scripts/level.gd" id="1_xuxpc"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bv2q8"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6inq"]
 atlas = ExtResource("1_r6inq")
-region = Rect2(521.02124, 375.4174, 37.396057, 37.610962)
+region = Rect2(570.7548, 375.7403, 37.396057, 37.610962)
 
 [resource]
 script = ExtResource("1_xuxpc")
 boss_name = "Crystal Snail"
 stage = "Energen Crystal"
-boss_image = SubResource("AtlasTexture_bv2q8")
+boss_image = SubResource("AtlasTexture_r6inq")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"
