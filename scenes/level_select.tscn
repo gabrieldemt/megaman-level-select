@@ -19,6 +19,10 @@
 [ext_resource type="Script" uid="uid://cvjypvb14w468" path="res://scenes/level_preview_texture_rect.gd" id="15_n1411"]
 [ext_resource type="Script" uid="uid://fi6bdded6ots" path="res://scenes/labels.gd" id="17_vxici"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_x21yk"]
+atlas = ExtResource("12_vxici")
+region = Rect2(190, 283, 48, 73)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_gr046"]
 atlas = ExtResource("12_vxici")
 region = Rect2(305.07498, 1.7155113, 255.37228, 151.86755)
@@ -45,15 +49,36 @@ offset_bottom = 650.0
 texture = ExtResource("4_s6tf7")
 expand_mode = 2
 
-[node name="MapTextureRect" type="TextureRect" parent="." unique_id=1847081671]
-modulate = Color(1, 1, 1, 0.6117647)
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1650726734]
 layout_mode = 0
-offset_left = 205.0
-offset_top = 207.0
-offset_right = 942.0
-offset_bottom = 438.0
+offset_left = 199.0
+offset_top = 436.0
+offset_right = 573.5547
+offset_bottom = 541.0
+scale = Vector2(2, 2)
+texture = SubResource("AtlasTexture_x21yk")
+stretch_mode = 1
+
+[node name="MapTextureRect" type="TextureRect" parent="." unique_id=1847081671]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 11.0
+offset_right = 1033.0
+offset_bottom = 452.0
 texture = SubResource("AtlasTexture_gr046")
 expand_mode = 2
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2063303892]
+layout_mode = 0
+offset_left = 947.0
+offset_top = 210.0
+offset_right = 1321.5547
+offset_bottom = 315.0
+rotation = -3.1415927
+scale = Vector2(2, 2)
+texture = SubResource("AtlasTexture_x21yk")
+stretch_mode = 1
 
 [node name="LevelPinTextureRect" type="TextureRect" parent="." unique_id=482588072]
 layout_mode = 0

@@ -9,22 +9,33 @@ extends TextureRect
 var original_position: Vector2
 var original_scale: Vector2
 
+# Armazenado Tween numa variável para garantir um reset
+# correto
+var _movement_animation: Tween
+
 func _ready() -> void:
 	original_position = position
 	original_scale = scale
-	animation()
 
+# TODO: Melhorar nome
+# - Nomes de função deveriam conter verbos no infinitivo
+# - Nomes de função devem ser descritivas de maneira conceitual
+
+# TODO: Pensar em colocar parâmetro relativo à orientação 
+# que as infos do level entram
 func animation():
 	position = original_position
 	self.scale = original_scale
 	# Tween 1 - Declaração
-	var movement_animation: Tween = create_tween().set_parallel(true)
+	
+	if _movement_animation:
+		_movement_animation.kill()
+	
+	_movement_animation = create_tween().set_parallel(true)
 	
 	# Tween 2 - Configuração
-	movement_animation.set_ease(ease).set_trans(trans)
+	_movement_animation.set_ease(ease).set_trans(trans)
 	
 	# Tween 3 - Animação
-	movement_animation.tween_property(self, "position", move_target, duration)
-	movement_animation.tween_property(self, "scale",scale_target,duration)
-	
-	
+	_movement_animation.tween_property(self, "position", move_target, duration)
+	_movement_animation.tween_property(self, "scale", scale_target, duration)
