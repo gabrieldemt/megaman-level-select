@@ -16,16 +16,20 @@
 [ext_resource type="Texture2D" uid="uid://c8svv33gnme6t" path="res://reference.jpg" id="9_n1411"]
 [ext_resource type="Resource" uid="uid://dbp5jrcvpbowl" path="res://database/levels/level_8.tres" id="10_r4hmm"]
 [ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="12_vxici"]
-[ext_resource type="Script" uid="uid://cvjypvb14w468" path="res://scenes/level_preview_texture_rect.gd" id="15_n1411"]
-[ext_resource type="Script" uid="uid://fi6bdded6ots" path="res://scenes/labels.gd" id="17_vxici"]
+[ext_resource type="Script" uid="uid://cvjypvb14w468" path="res://scripts/level_preview_texture_rect.gd" id="15_n1411"]
+[ext_resource type="Script" uid="uid://fi6bdded6ots" path="res://scripts/labels.gd" id="17_vxici"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gr046"]
+atlas = ExtResource("12_vxici")
+region = Rect2(305.07498, 1.7155113, 255.37228, 151.86755)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x21yk"]
 atlas = ExtResource("12_vxici")
 region = Rect2(190, 283, 48, 73)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gr046"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kjfc"]
 atlas = ExtResource("12_vxici")
-region = Rect2(305.07498, 1.7155113, 255.37228, 151.86755)
+region = Rect2(4, 167, 249, 57)
 
 [node name="LevelSelect" type="Control" unique_id=1957090688 node_paths=PackedStringArray("initial_focus", "boss_buttons")]
 texture_filter = 1
@@ -49,16 +53,6 @@ offset_bottom = 650.0
 texture = ExtResource("4_s6tf7")
 expand_mode = 2
 
-[node name="TextureRect2" type="TextureRect" parent="." unique_id=1650726734]
-layout_mode = 0
-offset_left = 199.0
-offset_top = 436.0
-offset_right = 573.5547
-offset_bottom = 541.0
-scale = Vector2(2, 2)
-texture = SubResource("AtlasTexture_x21yk")
-stretch_mode = 1
-
 [node name="MapTextureRect" type="TextureRect" parent="." unique_id=1847081671]
 layout_mode = 0
 offset_left = 114.0
@@ -69,15 +63,27 @@ texture = SubResource("AtlasTexture_gr046")
 expand_mode = 2
 stretch_mode = 5
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=2063303892]
+[node name="BGTextureRect2" type="TextureRect" parent="." unique_id=1650726734]
+layout_mode = 0
+offset_left = 207.0
+offset_top = 457.0
+offset_right = 330.1667
+offset_bottom = 490.0
+scale = Vector2(6, 6)
+texture = SubResource("AtlasTexture_x21yk")
+expand_mode = 2
+stretch_mode = 1
+
+[node name="BGTextureRect3" type="TextureRect" parent="." unique_id=2063303892]
 layout_mode = 0
 offset_left = 947.0
 offset_top = 210.0
-offset_right = 1321.5547
-offset_bottom = 315.0
+offset_right = 1071.6908
+offset_bottom = 244.95844
 rotation = -3.1415927
-scale = Vector2(2, 2)
+scale = Vector2(6, 6)
 texture = SubResource("AtlasTexture_x21yk")
+expand_mode = 2
 stretch_mode = 1
 
 [node name="LevelPinTextureRect" type="TextureRect" parent="." unique_id=482588072]
@@ -103,6 +109,26 @@ script = ExtResource("15_n1411")
 duration = 0.3
 move_target = Vector2(721, 263)
 
+[node name="BossBordersTextureRect" type="TextureRect" parent="." unique_id=513543924]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 13.0
+offset_right = 568.0
+offset_bottom = 91.0
+scale = Vector2(2, 2)
+texture = SubResource("AtlasTexture_6kjfc")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="BossBordersTextureRect2" type="TextureRect" parent="." unique_id=677628176]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 426.0
+offset_right = 567.0
+offset_bottom = 504.0
+scale = Vector2(2, 2)
+texture = SubResource("AtlasTexture_6kjfc")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1970521246]
 layout_mode = 1
 anchors_preset = 8
@@ -110,10 +136,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -312.0
+offset_left = -326.5
 offset_top = -293.0
-offset_right = 348.0
-offset_bottom = 279.0
+offset_right = 318.5
+offset_bottom = 257.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 300
@@ -121,6 +147,7 @@ metadata/_edit_lock_ = true
 
 [node name="TopHBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=965696299]
 layout_mode = 2
+theme_override_constants/separation = 15
 
 [node name="Button" parent="VBoxContainer/TopHBoxContainer" unique_id=201656669 instance=ExtResource("8_m4qq5")]
 layout_mode = 2
@@ -133,7 +160,7 @@ boss_name = "Bubble Crab"
 stage = "Deep Sea Base"
 
 [node name="Control" type="Control" parent="VBoxContainer/TopHBoxContainer" unique_id=203845344]
-custom_minimum_size = Vector2(100, 0)
+custom_minimum_size = Vector2(113, 0)
 layout_mode = 2
 
 [node name="Button3" parent="VBoxContainer/TopHBoxContainer" unique_id=1655992382 instance=ExtResource("8_m4qq5")]
@@ -148,6 +175,7 @@ stage = "Morth Moth"
 
 [node name="BottomHBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1595658864]
 layout_mode = 2
+theme_override_constants/separation = 15
 
 [node name="Button" parent="VBoxContainer/BottomHBoxContainer" unique_id=1205267688 instance=ExtResource("8_m4qq5")]
 layout_mode = 2
@@ -156,11 +184,12 @@ stage = "Central Computer"
 
 [node name="Button2" parent="VBoxContainer/BottomHBoxContainer" unique_id=1838105327 instance=ExtResource("8_m4qq5")]
 layout_mode = 2
+size_flags_horizontal = 4
 boss_name = "Crystal Snail"
 stage = "Energen Crystal"
 
 [node name="Control" type="Control" parent="VBoxContainer/BottomHBoxContainer" unique_id=1162889948]
-custom_minimum_size = Vector2(100, 0)
+custom_minimum_size = Vector2(113, 0)
 layout_mode = 2
 
 [node name="Button3" parent="VBoxContainer/BottomHBoxContainer" unique_id=1961018880 instance=ExtResource("8_m4qq5")]

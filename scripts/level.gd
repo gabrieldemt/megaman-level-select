@@ -8,5 +8,5 @@ extends Resource
 @export var stage: String
 @export var preview: Texture2D
 # TODO: Mudar para Vector2 e pegar a posição das bolineas
-@export var pin_location: String
+@export var pin_location: Vector2
 @export var boss_image: Texture2D

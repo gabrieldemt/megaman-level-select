@@ -10,7 +10,7 @@ region_rect = Rect2(255.89981, 189.5244, 36.030334, 38.491333)
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_704bu"]
 
 [node name="Button" type="Button" unique_id=201656669]
-custom_minimum_size = Vector2(125, 125)
+custom_minimum_size = Vector2(115, 115)
 theme_override_styles/focus = SubResource("StyleBoxTexture_vxici")
 icon = SubResource("CompressedTexture2D_704bu")
 expand_icon = true
