@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="12_vxici"]
 [ext_resource type="Script" uid="uid://cvjypvb14w468" path="res://scripts/level_preview_texture_rect.gd" id="15_n1411"]
 [ext_resource type="Script" uid="uid://fi6bdded6ots" path="res://scripts/labels.gd" id="17_vxici"]
+[ext_resource type="Theme" uid="uid://btojm3hp5pfwa" path="res://themes/labels_theme.tres" id="18_thf6c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gr046"]
 atlas = ExtResource("12_vxici")
@@ -217,6 +218,7 @@ offset_left = 248.0
 offset_top = 234.0
 offset_right = 553.0
 offset_bottom = 283.0
+theme = ExtResource("18_thf6c")
 theme_override_font_sizes/normal_font_size = 30
 text = "Dinosaur Tank"
 
@@ -227,6 +229,7 @@ offset_left = 529.0
 offset_top = 279.0
 offset_right = 643.0
 offset_bottom = 328.0
+theme = ExtResource("18_thf6c")
 theme_override_font_sizes/normal_font_size = 30
 text = "Stage"
 
@@ -235,8 +238,9 @@ unique_name_in_owner = true
 layout_mode = 0
 offset_left = 249.0
 offset_top = 338.0
-offset_right = 510.0
+offset_right = 594.0
 offset_bottom = 436.0
+theme = ExtResource("18_thf6c")
 theme_override_font_sizes/normal_font_size = 30
 text = "Boss:
 Wheel Gator"
