@@ -9,9 +9,26 @@ region_rect = Rect2(255.89981, 189.5244, 36.030334, 38.491333)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_704bu"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kjfc"]
+atlas = ExtResource("1_7cspj")
+region = Rect2(101, 95, 56, 58)
+
 [node name="Button" type="Button" unique_id=201656669]
-custom_minimum_size = Vector2(115, 115)
+custom_minimum_size = Vector2(112, 112)
+offset_right = 112.0
+offset_bottom = 112.0
 theme_override_styles/focus = SubResource("StyleBoxTexture_vxici")
 icon = SubResource("CompressedTexture2D_704bu")
 expand_icon = true
 script = ExtResource("2_r4jh1")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=642550547]
+layout_mode = 0
+offset_left = -25.0
+offset_top = -23.0
+offset_right = 134.0
+offset_bottom = 136.0
+texture = SubResource("AtlasTexture_6kjfc")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="button_up" from="." to="." method="_on_button_up"]

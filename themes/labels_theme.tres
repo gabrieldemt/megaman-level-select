@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://btojm3hp5pfwa"]
 
-[ext_resource type="FontFile" uid="uid://cj3wyvnmb3dfy" path="res://themes/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/Peaberry-Mono.otf" id="1_rnwqn"]
+[ext_resource type="FontFile" uid="uid://cx0m7dyhpkeqw" path="res://themes/PeaberryBase.ttf" id="1_rnwqn"]
 
 [resource]
 default_font = ExtResource("1_rnwqn")

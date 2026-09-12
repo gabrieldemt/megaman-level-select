@@ -6,7 +6,6 @@
 [ext_resource type="Resource" uid="uid://0lgdsfnx734t" path="res://database/levels/level_2.tres" id="4_m4qq5"]
 [ext_resource type="Texture2D" uid="uid://chx7r2grh67mb" path="res://prototype textures/PNG/Light/texture_02.png" id="4_s6tf7"]
 [ext_resource type="Resource" uid="uid://doif80fxad2fq" path="res://database/levels/level_3.tres" id="5_n1411"]
-[ext_resource type="Texture2D" uid="uid://h2o7th13vdnt" path="res://prototype textures/PNG/Dark/texture_04.png" id="6_rovvv"]
 [ext_resource type="Resource" uid="uid://j2ipr4s3ws6c" path="res://database/levels/level_4.tres" id="6_vxici"]
 [ext_resource type="Texture2D" uid="uid://dmc3mot1y2b7" path="res://prototype textures/PNG/Purple/texture_01.png" id="7_0wyvj"]
 [ext_resource type="Resource" uid="uid://y4jhgpoiixwx" path="res://database/levels/level_5.tres" id="7_thf6c"]
@@ -27,6 +26,10 @@ region = Rect2(305.07498, 1.7155113, 255.37228, 151.86755)
 [sub_resource type="AtlasTexture" id="AtlasTexture_x21yk"]
 atlas = ExtResource("12_vxici")
 region = Rect2(190, 283, 48, 73)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3xvo"]
+atlas = ExtResource("12_vxici")
+region = Rect2(294, 220, 8, 8)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6kjfc"]
 atlas = ExtResource("12_vxici")
@@ -93,7 +96,7 @@ offset_left = 496.0
 offset_top = 358.0
 offset_right = 520.0
 offset_bottom = 382.0
-texture = ExtResource("6_rovvv")
+texture = SubResource("AtlasTexture_i3xvo")
 expand_mode = 2
 
 [node name="LevelPreviewTextureRect" type="TextureRect" parent="." unique_id=68085978]
@@ -111,22 +114,24 @@ duration = 0.3
 move_target = Vector2(721, 263)
 
 [node name="BossBordersTextureRect" type="TextureRect" parent="." unique_id=513543924]
+visible = false
 layout_mode = 0
 offset_left = 225.0
-offset_top = 13.0
+offset_top = 17.0
 offset_right = 568.0
-offset_bottom = 91.0
+offset_bottom = 95.0
 scale = Vector2(2, 2)
 texture = SubResource("AtlasTexture_6kjfc")
 expand_mode = 2
 stretch_mode = 4
 
 [node name="BossBordersTextureRect2" type="TextureRect" parent="." unique_id=677628176]
+visible = false
 layout_mode = 0
 offset_left = 225.0
-offset_top = 426.0
+offset_top = 436.0
 offset_right = 567.0
-offset_bottom = 504.0
+offset_bottom = 514.0
 scale = Vector2(2, 2)
 texture = SubResource("AtlasTexture_6kjfc")
 
@@ -138,9 +143,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -326.5
-offset_top = -293.0
+offset_top = -284.0
 offset_right = 318.5
-offset_bottom = 257.0
+offset_bottom = 266.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 300
@@ -148,7 +153,7 @@ metadata/_edit_lock_ = true
 
 [node name="TopHBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=965696299]
 layout_mode = 2
-theme_override_constants/separation = 15
+theme_override_constants/separation = 29
 
 [node name="Button" parent="VBoxContainer/TopHBoxContainer" unique_id=201656669 instance=ExtResource("8_m4qq5")]
 layout_mode = 2
@@ -161,7 +166,7 @@ boss_name = "Bubble Crab"
 stage = "Deep Sea Base"
 
 [node name="Control" type="Control" parent="VBoxContainer/TopHBoxContainer" unique_id=203845344]
-custom_minimum_size = Vector2(113, 0)
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="Button3" parent="VBoxContainer/TopHBoxContainer" unique_id=1655992382 instance=ExtResource("8_m4qq5")]
@@ -176,7 +181,7 @@ stage = "Morth Moth"
 
 [node name="BottomHBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1595658864]
 layout_mode = 2
-theme_override_constants/separation = 15
+theme_override_constants/separation = 28
 
 [node name="Button" parent="VBoxContainer/BottomHBoxContainer" unique_id=1205267688 instance=ExtResource("8_m4qq5")]
 layout_mode = 2
@@ -190,7 +195,7 @@ boss_name = "Crystal Snail"
 stage = "Energen Crystal"
 
 [node name="Control" type="Control" parent="VBoxContainer/BottomHBoxContainer" unique_id=1162889948]
-custom_minimum_size = Vector2(113, 0)
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="Button3" parent="VBoxContainer/BottomHBoxContainer" unique_id=1961018880 instance=ExtResource("8_m4qq5")]
