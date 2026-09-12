@@ -8,9 +8,6 @@ var _button_pressed_tween: Tween
 func _ready():
 	# set pivot on bottom center
 	pivot_offset = size * Vector2(0.5, 1.0)
-	
-	button_down.connect(_on_button_down)
-	button_up.connect(_on_button_up)
 
 func _on_button_down():
 	# ensures the tween is not running

@@ -16,5 +16,6 @@ script = ExtResource("1_d705d")
 boss_name = "Wire Sponge"
 stage = "Weather Control"
 preview = SubResource("AtlasTexture_su1bu")
+pin_location = Vector2(622, 337)
 boss_image = SubResource("AtlasTexture_7hpxr")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

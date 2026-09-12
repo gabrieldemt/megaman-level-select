@@ -16,5 +16,6 @@ script = ExtResource("1_xveau")
 boss_name = "Flame Stag"
 stage = "Volcanic Zone"
 preview = SubResource("AtlasTexture_ste5c")
+pin_location = Vector2(764, 253)
 boss_image = SubResource("AtlasTexture_86dau")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

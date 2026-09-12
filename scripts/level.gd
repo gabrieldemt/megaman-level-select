@@ -7,6 +7,6 @@ extends Resource
 @export var boss_name: String
 @export var stage: String
 @export var preview: Texture2D
-# TODO: Mudar para Vector2 e pegar a posição das bolineas
+@export var is_going_right: bool
 @export var pin_location: Vector2
 @export var boss_image: Texture2D
