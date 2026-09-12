@@ -1,3 +1,4 @@
+class_name labelsControl
 extends Control
 
 @export var ease: Tween.EaseType
@@ -11,9 +12,9 @@ extends Control
 var visible_ratio_target: float = 1.0
 
 func _ready() -> void:
-	animation()
+	animate_rich_text_label()
 
-func animation():
+func animate_rich_text_label():
 	level_name_label.visible_ratio = 0.0
 	stage_label.visible_ratio = 0.0
 	boss_label.visible_ratio = 0.0
@@ -30,5 +31,4 @@ func animation():
 
 
 func _on_level_name_label_focus_entered() -> void:
-	
-	animation()
+	animate_rich_text_label()

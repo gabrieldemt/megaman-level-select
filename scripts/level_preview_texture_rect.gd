@@ -1,3 +1,4 @@
+class_name LevelPreviewTexture
 extends TextureRect
 
 @export var ease: Tween.EaseType
@@ -17,25 +18,20 @@ func _ready() -> void:
 	original_position = position
 	original_scale = scale
 
-# TODO: Melhorar nome
-# - Nomes de função deveriam conter verbos no infinitivo
-# - Nomes de função devem ser descritivas de maneira conceitual
 
 # TODO: Pensar em colocar parâmetro relativo à orientação 
 # que as infos do level entram
-func animation():
+func animate_preview_texture():
+
 	position = original_position
 	self.scale = original_scale
-	# Tween 1 - Declaração
 	
 	if _movement_animation:
 		_movement_animation.kill()
 	
 	_movement_animation = create_tween().set_parallel(true)
 	
-	# Tween 2 - Configuração
 	_movement_animation.set_ease(ease).set_trans(trans)
 	
-	# Tween 3 - Animação
 	_movement_animation.tween_property(self, "position", move_target, duration)
 	_movement_animation.tween_property(self, "scale", scale_target, duration)

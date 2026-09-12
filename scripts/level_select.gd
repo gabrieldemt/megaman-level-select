@@ -1,8 +1,5 @@
 extends Control
 
-# TODO: Tipar as classes Labels e LevelPreview e qualquer outra
-# que interfacear com outros códigos
-
 @export var initial_focus: Button
 @export var boss_buttons: Array[Button] 
 @export var level_data: Array[Level]
@@ -10,8 +7,8 @@ extends Control
 @onready var level_name_label: RichTextLabel = %LevelNameLabel
 @onready var stage_label: RichTextLabel = %StageLabel
 @onready var boss_label: RichTextLabel = %BossLabel
-@onready var labels: Control = %Labels
-@onready var level_preview_texture_rect: TextureRect = %LevelPreviewTextureRect
+@onready var labels: labelsControl = %Labels
+@onready var level_preview_texture_rect: LevelPreviewTexture = %LevelPreviewTextureRect
 
 func _ready() -> void:
 	var index := 0
@@ -41,5 +38,5 @@ func _on_button_focus_entered(button: Button, level_index: int) -> void:
 	level_preview_texture_rect.texture = level_data[level_index].preview
 	
 	# Animate ui components
-	labels.animation()
-	level_preview_texture_rect.animation()
+	labels.animate_rich_text_label()
+	level_preview_texture_rect.animate_preview_texture()
