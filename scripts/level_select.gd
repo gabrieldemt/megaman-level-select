@@ -26,7 +26,6 @@ func _get_level(index: int) -> Level:
 		return null
 	return level_data[index]
 
-
 func _on_button_focus_entered(button: Button, level_index: int) -> void:
 	# If level no implemented yet return
 	var focused_level: Level = _get_level(level_index)
@@ -36,6 +35,13 @@ func _on_button_focus_entered(button: Button, level_index: int) -> void:
 	level_name_label.text = focused_level.stage
 	boss_label.text = focused_level.boss_name
 	level_preview_texture_rect.texture = level_data[level_index].preview
+	
+	if focused_level.is_going_right == false:
+		level_preview_texture_rect.direction = false
+		labels.position = labels.is_going_left_target
+	else:
+		level_preview_texture_rect.direction = true
+		labels.position = labels.is_going_right_target
 	
 	# Animate ui components
 	labels.animate_rich_text_label()

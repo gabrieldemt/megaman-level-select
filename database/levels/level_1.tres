@@ -9,7 +9,7 @@ region = Rect2(521.02124, 375.4174, 37.396057, 37.610962)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ovdhk"]
 atlas = ExtResource("1_ovdhk")
-region = Rect2(634.1314, 130.93427, 63.073303, 48.47583)
+region = Rect2(634, 131, 63.204712, 48)
 
 [resource]
 script = ExtResource("1_ogcqf")
