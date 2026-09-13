@@ -17,5 +17,6 @@ boss_name = "Wheel Gator"
 stage = "Dinosaur Tank"
 preview = SubResource("AtlasTexture_ovdhk")
 is_going_right = true
+pin_location = Vector2(478, 372)
 boss_image = SubResource("AtlasTexture_ghtdo")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

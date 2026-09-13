@@ -17,5 +17,6 @@ boss_name = "Overdrive Ostrich"
 stage = "Desert Base"
 preview = SubResource("AtlasTexture_hh0qj")
 is_going_right = true
+pin_location = Vector2(297, 300)
 boss_image = SubResource("AtlasTexture_1sxrk")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"

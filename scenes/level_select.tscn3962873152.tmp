@@ -15,13 +15,10 @@
 [ext_resource type="Texture2D" uid="uid://c8svv33gnme6t" path="res://reference.jpg" id="9_n1411"]
 [ext_resource type="Resource" uid="uid://dbp5jrcvpbowl" path="res://database/levels/level_8.tres" id="10_r4hmm"]
 [ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="12_vxici"]
-[ext_resource type="Script" uid="uid://dqo22of8wkjhy" path="res://scripts/level_pin_texture_rect.gd" id="13_thf6c"]
+[ext_resource type="Script" uid="uid://dqo22of8wkjhy" path="res://scenes/level_pin_texture_rect.gd" id="13_thf6c"]
 [ext_resource type="Script" uid="uid://cvjypvb14w468" path="res://scripts/level_preview_texture_rect.gd" id="15_n1411"]
 [ext_resource type="Script" uid="uid://fi6bdded6ots" path="res://scripts/labels.gd" id="17_vxici"]
 [ext_resource type="Theme" uid="uid://btojm3hp5pfwa" path="res://themes/labels_theme.tres" id="18_thf6c"]
-[ext_resource type="AudioStream" uid="uid://bx8cljmwli781" path="res://art/audio/Text typing sound.wav" id="19_317l6"]
-[ext_resource type="AudioStream" uid="uid://btmy4xs1q0pv7" path="res://art/audio/09 - Stage Select 1.mp3" id="20_f86jd"]
-[ext_resource type="AudioStream" uid="uid://b53d3ojayxa3y" path="res://art/audio/JDSherbert - Ultimate UI SFX Pack - Select - 1.mp3" id="20_r4hmm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gr046"]
 atlas = ExtResource("12_vxici")
@@ -34,44 +31,6 @@ region = Rect2(190, 283, 48, 73)
 [sub_resource type="AtlasTexture" id="AtlasTexture_i3xvo"]
 atlas = ExtResource("12_vxici")
 region = Rect2(294, 220, 8, 8)
-
-[sub_resource type="Animation" id="Animation_thf6c"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture:region")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Rect2(294, 220, 8, 8)]
-}
-
-[sub_resource type="Animation" id="Animation_f86jd"]
-resource_name = "pin_animation"
-length = 2.0
-capture_included = true
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture:region")
-tracks/0/interp = 0
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.005830258, 0.1, 0.2, 0.33333334, 0.4666667, 0.6, 0.6667, 0.76086974, 0.86086977, 0.9942031, 1.1275364, 1.2608697, 1.3391358, 1.4333055, 1.5333055, 1.6666389, 1.7999722, 1.9333055),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 2,
-"values": [Rect2(294, 220, 8, 8), Rect2(294, 210, 8, 8), Rect2(294, 200, 8, 8), Rect2(294, 190, 8, 8), Rect2(294, 180, 8, 8), Rect2(294, 170, 8, 8), Rect2(294, 220, 8, 8), Rect2(294, 210, 8, 8), Rect2(294, 200, 8, 8), Rect2(294, 190, 8, 8), Rect2(294, 180, 8, 8), Rect2(294, 170, 8, 8), Rect2(294, 220, 8, 8), Rect2(294, 210, 8, 8), Rect2(294, 200, 8, 8), Rect2(294, 190, 8, 8), Rect2(294, 180, 8, 8), Rect2(294, 170, 8, 8)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_317l6"]
-_data = {
-&"RESET": SubResource("Animation_thf6c"),
-&"pin_animation": SubResource("Animation_f86jd")
-}
 
 [node name="LevelSelect" type="Control" unique_id=1957090688 node_paths=PackedStringArray("initial_focus", "boss_buttons")]
 texture_filter = 1
@@ -138,10 +97,6 @@ offset_bottom = 324.0
 texture = SubResource("AtlasTexture_i3xvo")
 expand_mode = 2
 script = ExtResource("13_thf6c")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="LevelPinTextureRect" unique_id=2044000359]
-unique_name_in_owner = true
-libraries/ = SubResource("AnimationLibrary_317l6")
 
 [node name="LevelPreviewTextureRect" type="TextureRect" parent="." unique_id=68085978]
 unique_name_in_owner = true
@@ -233,6 +188,7 @@ stage = "Weather Control"
 
 [node name="Labels" type="Control" parent="." unique_id=266587224]
 unique_name_in_owner = true
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -265,10 +221,10 @@ text = "Stage"
 [node name="BossLabel" type="RichTextLabel" parent="Labels" unique_id=1364686830]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 250.0
-offset_top = 366.0
-offset_right = 595.0
-offset_bottom = 464.0
+offset_left = 249.0
+offset_top = 338.0
+offset_right = 594.0
+offset_bottom = 436.0
 theme = ExtResource("18_thf6c")
 theme_override_font_sizes/normal_font_size = 30
 text = "Boss:
@@ -285,21 +241,3 @@ texture = ExtResource("9_n1411")
 expand_mode = 1
 stretch_mode = 4
 metadata/_edit_lock_ = true
-
-[node name="ChangeFocusSound" type="AudioStreamPlayer2D" parent="." unique_id=892963162]
-unique_name_in_owner = true
-position = Vector2(250, 366)
-stream = ExtResource("20_r4hmm")
-volume_db = -10.0
-
-[node name="StageMusic" type="AudioStreamPlayer2D" parent="." unique_id=1340273569]
-unique_name_in_owner = true
-position = Vector2(250, 366)
-stream = ExtResource("20_f86jd")
-volume_db = -27.704
-playback_type = 1
-
-[node name="TypingSound" type="AudioStreamPlayer2D" parent="." unique_id=980949680]
-unique_name_in_owner = true
-position = Vector2(250, 366)
-stream = ExtResource("19_317l6")

@@ -17,5 +17,6 @@ boss_name = "Bubble Crab"
 stage = "Deep-Sea Base"
 preview = SubResource("AtlasTexture_axdku")
 is_going_right = true
+pin_location = Vector2(850, 370)
 boss_image = SubResource("AtlasTexture_e1suu")
 metadata/_custom_type_script = "uid://c6xh26i1r7nia"
