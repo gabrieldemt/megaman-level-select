@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://drdavoq2u15sa" path="res://art/SNES - Mega Man X2 - Miscellaneous - Stage Select Screen.png" id="1_7cspj"]
 [ext_resource type="Script" uid="uid://kg64pud0h4pf" path="res://scripts/boss_button.gd" id="2_r4jh1"]
+[ext_resource type="AudioStream" uid="uid://di86bvg06jxm1" path="res://art/audio/JDSherbert - Ultimate UI SFX Pack - Cursor - 4.mp3" id="3_7cspj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vxici"]
 texture = ExtResource("1_7cspj")
@@ -29,6 +30,12 @@ offset_top = -23.0
 offset_right = 134.0
 offset_bottom = 136.0
 texture = SubResource("AtlasTexture_6kjfc")
+
+[node name="ButtonClickSound" type="AudioStreamPlayer2D" parent="." unique_id=2072833116]
+unique_name_in_owner = true
+position = Vector2(250, 366)
+stream = ExtResource("3_7cspj")
+volume_db = -19.21
 
 [connection signal="button_down" from="." to="." method="_on_button_down"]
 [connection signal="button_up" from="." to="." method="_on_button_up"]
