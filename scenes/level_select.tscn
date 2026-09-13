@@ -290,14 +290,14 @@ metadata/_edit_lock_ = true
 unique_name_in_owner = true
 position = Vector2(250, 366)
 stream = ExtResource("20_r4hmm")
-volume_db = -10.0
+volume_db = -21.261
 
 [node name="StageMusic" type="AudioStreamPlayer2D" parent="." unique_id=1340273569]
 unique_name_in_owner = true
 position = Vector2(250, 366)
 stream = ExtResource("20_f86jd")
 volume_db = -27.704
-playback_type = 1
+parameters/looping = true
 
 [node name="TypingSound" type="AudioStreamPlayer2D" parent="." unique_id=980949680]
 unique_name_in_owner = true
